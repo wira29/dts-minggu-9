@@ -87,6 +87,11 @@ class MainActivity : AppCompatActivity() {
                 var intent = Intent(this, AddActivity::class.java)
                 startActivity(intent)
             }
+            R.id.btn_logout -> {
+                val intent = Intent(this, LoginActivity::class.java)
+                startActivity(intent)
+                finish()
+            }
         }
         return true
     }
